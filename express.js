@@ -13,7 +13,7 @@ app.use(express.json());
 
 // point server to route files
 require('./routes/apiRoutes')(app);
-// require('./routes/htmlRoutes')(app);
+require('./routes/htmlRoutes')(app);
 
 // listener code
 app.listen(PORT, () => {
