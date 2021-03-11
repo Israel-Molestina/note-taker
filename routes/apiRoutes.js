@@ -1,4 +1,4 @@
-const notes = require('../db/db.json');
+let notes = require('../db/db.json');
 const uniqid = require('uniqid');
 const fs = require('fs');
 const path = require('path');
@@ -27,16 +27,20 @@ module.exports = (app) => {
 
     // deltes note with id
     app.delete('/api/notes/:id', (req, res) => {
-        console.log(req)
+
         let noteId = req.params.id
         console.log(noteId);
 
-        
-        // let notesId 
-        // for (let i = 0; i < notes.length; i++) {
-        //     console.log(res.json(notes[i].id))
-        // }
-        // console.log(notesId)
-    } )
+        for (let i = 0; i < notes.length; i++) {
+            if(noteId === notes[i].id) {
+                notes.splice(i, 1);
+                fs.writeFile(path.join(__dirname, "../db/db.json"), JSON.stringify(notes), (err, data) => {
+                    if (err) throw err;
+                    return notes;
+                });
+            }
+        }
+        res.sendFile(path.join(__dirname, '../public/notes.html'));
+    })
 
 }
