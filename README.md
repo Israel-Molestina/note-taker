@@ -4,7 +4,7 @@
 
 ## Description
 
-Note Taker is an application that is used to write and save notes. The application uses an Express.js back end and saves and retrieves note data from a JSON file. I was put in charge of creating the back end, connecting it to the front end and then deploying the applicaiton to Heroku. 
+Note Taker is an application that is used to write and save notes. The application uses an Express.js back end and saves and retrieves note data from a JSON file. I was put in charge of creating the back end, connecting it to the front end and then deploying the application to Heroku. 
 
 ## Table of Contents
 
@@ -30,7 +30,7 @@ npm i inquirer and npm i uniqid
 
 ## Usage
 
-Using the application is simple. Simply go to the link I have provided below. Once you are there click on Get started. This will bring you to the notes page. You can add a note by inputing the title and text for the note, then clicking the save icon on the top right. Your note will now appear on a column on the left. If you click on it your note will be displayed on the right. To add a new note, click the pen icon on the top left. To delete a note click on the red garbage bin icon to the right of your notes on the left column.  
+Using the application is simple. Simply go to the link I have provided below. Once you are there click on Get started. This will bring you to the notes page. You can add a note by inputting the title and text for the note, then clicking the save icon on the top right. Your note will now appear on a column on the left. If you click on it your note will be displayed on the right. To add a new note, click the pen icon on the top left. To delete a note click on the red garbage bin icon to the right of your notes on the left column.  
 
 ## License 
 
@@ -50,4 +50,4 @@ N/A
 
 ## Questions
 
-If you have any questions, conatact me at molestinaisrael@gmail.com. You can find more of my work at [Israel-Molestina](https://github.com/Israel-Molestina)
+If you have any questions, contact me at molestinaisrael@gmail.com. You can find more of my work at [Israel-Molestina](https://github.com/Israel-Molestina)
