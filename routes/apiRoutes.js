@@ -4,9 +4,11 @@ const fs = require('fs');
 const path = require('path');
 
 module.exports = (app) => {
-
+    // res.json(notes)
     // get request to db.json file
-    app.get('/api/notes', (req, res) => res.json(notes));
+    app.get('/api/notes', (req, res) => {
+        res.json(notes)
+    });
 
     // post request to db.json file
     app.post('/api/notes', (req, res) => {
@@ -41,6 +43,6 @@ module.exports = (app) => {
             }
         }
         res.sendFile(path.join(__dirname, '../public/notes.html'));
-    })
+    });
 
-}
+};
